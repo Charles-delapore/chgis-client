@@ -40,7 +40,7 @@ parents = client.get_ancestors("hvd_32180", year=800)
 # Disambiguation: best record + affiliation chain
 best = resolve("苏州府", year=1820, client=client)
 print(best.place.sys_id, best.chain_names())
-# hvd_32432 ['苏州府', '江南行省']
+# hvd_32432 ['苏州府', ...]  — the chain depends on the record set
 ```
 
 Search quirks (documented upstream): `n` uses prefix matching; some
